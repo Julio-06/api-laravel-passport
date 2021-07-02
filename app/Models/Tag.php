@@ -2,12 +2,13 @@
 
 namespace App\Models;
 
+use App\Traits\ApiTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Tag extends Model
 {
-    use HasFactory;
+    use HasFactory, ApiTrait;
 
     //RELACION DE MUCHOS A MUCHOS
     public function posts(){
