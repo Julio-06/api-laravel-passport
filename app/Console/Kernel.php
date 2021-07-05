@@ -24,7 +24,9 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        // $schedule->command('inspire')->hourly();
+        //ESTE LINEA DE CODIGO NOS PERMITIRA EJECUTAR DE FORMA AUTOMATICA
+        //EL COMANDO passport:purge DIARIAMENTE
+        $schedule->command('passport:purge')->daily();
     }
 
     /**
